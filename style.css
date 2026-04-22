@@ -1,0 +1,48 @@
+/* Standard CSS for Muxlis Studio Standalone */
+
+:root {
+  --color-gold: #D4AF37;
+  --color-bronze: #A67C00;
+  --color-noir: #0A0A0A;
+}
+
+body {
+    background-color: var(--color-noir);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.premium-gradient {
+  background: linear-gradient(135deg, #1A1A1A 0%, #0A0A0A 100%);
+}
+
+.gold-text {
+  background: linear-gradient(to right, #D4AF37, #A67C00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gold-border {
+  border-image: linear-gradient(to right, #D4AF37, #A67C00) 1;
+}
+
+/* Tab button transition */
+.tab-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Disable selection highlighting on buttons */
+button {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Small adjustments for Lucide icons */
+.lucide {
+    display: inline-block;
+    vertical-align: middle;
+}
